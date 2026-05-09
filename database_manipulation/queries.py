@@ -30,9 +30,6 @@ def main():
     if connection is None:
         return
 
-    create_table(connection, tables.TABLE_location)
-    create_table(connection, tables.TABLE_weather)
-
     connection.commit()
     connection.close()
 
